@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<!-- 5个切换的ViewPager -->
+    <com.example.zhbj.view.ViewPagerDisable
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RadioGroup
+        android:id="@+id/rg_root"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:background="@drawable/bottom_tab_bg" >
+
+        <RadioButton
+            android:id="@+id/btn_home"
+            style="@style/ButtonTabStyle"
+            android:drawableTop="@drawable/btn_tab_home_selector"
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/btn_news"
+           style="@style/ButtonTabStyle"
+            android:text="新闻中心"
+            android:drawableTop="@drawable/btn_tab_news_selector"
+            />
+
+        <RadioButton
+            android:id="@+id/btn_smart"
+           style="@style/ButtonTabStyle"
+            android:text="智慧服务"
+            android:drawableTop="@drawable/btn_tab_smart_selector"
+            />
+
+        <RadioButton
+            android:id="@+id/btn_gov"
+           style="@style/ButtonTabStyle"
+            android:text="政务"
+            android:drawableTop="@drawable/btn_tab_gov_selector"
+            />
+
+          <RadioButton
+              android:id="@+id/btn_set"
+              style="@style/ButtonTabStyle"
+              android:layout_height="wrap_content"
+              android:drawableTop="@drawable/btn_tab_set_selector"
+              android:text="设置" />
+
+    </RadioGroup>
+
+</LinearLayout>
